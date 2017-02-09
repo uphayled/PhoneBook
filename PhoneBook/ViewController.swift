@@ -83,8 +83,8 @@ extension ViewController {
         addAction.isEnabled = false
         AddAlert.addAction(addAction)
         
-        AddAlert.textFields?.first?.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-        AddAlert.textFields?.last?.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        AddAlert.textFields?.first?.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+        AddAlert.textFields?.last?.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
         
         
         present(AddAlert, animated: true, completion: nil)
@@ -98,7 +98,7 @@ extension ViewController {
     func textFieldDidChange(textField:UITextField) {
         let theLength = textField.text!.characters.count
         let theController = self.presentedViewController as? UIAlertController
-        
+        theController?.actions.last?.isEnabled = correct_name && correct_phone
         
     }
     
