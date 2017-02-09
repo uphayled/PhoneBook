@@ -14,6 +14,8 @@
 		CBF19B6B1E4CD0D1000EC6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF19B6A1E4CD0D1000EC6AE /* Assets.xcassets */; };
 		CBF19B6E1E4CD0D1000EC6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF19B6C1E4CD0D1000EC6AE /* LaunchScreen.storyboard */; };
 		CBF19B791E4CD0D1000EC6AE /* PhoneBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF19B781E4CD0D1000EC6AE /* PhoneBookTests.swift */; };
+		CBF19B851E4CD95F000EC6AE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF19B841E4CD95F000EC6AE /* Contact.swift */; };
+		CBF19B881E4CDC25000EC6AE /* PhoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF19B871E4CDC25000EC6AE /* PhoneType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		CBF19B741E4CD0D1000EC6AE /* PhoneBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF19B781E4CD0D1000EC6AE /* PhoneBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookTests.swift; sourceTree = "<group>"; };
 		CBF19B7A1E4CD0D1000EC6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF19B841E4CD95F000EC6AE /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		CBF19B871E4CDC25000EC6AE /* PhoneType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +83,11 @@
 		CBF19B5F1E4CD0D1000EC6AE /* PhoneBook */ = {
 			isa = PBXGroup;
 			children = (
-				CBF19B601E4CD0D1000EC6AE /* AppDelegate.swift */,
 				CBF19B621E4CD0D1000EC6AE /* ViewController.swift */,
 				CBF19B641E4CD0D1000EC6AE /* Main.storyboard */,
-				CBF19B6A1E4CD0D1000EC6AE /* Assets.xcassets */,
-				CBF19B6C1E4CD0D1000EC6AE /* LaunchScreen.storyboard */,
-				CBF19B6F1E4CD0D1000EC6AE /* Info.plist */,
-				CBF19B671E4CD0D1000EC6AE /* PhoneBook.xcdatamodeld */,
+				CBF19B871E4CDC25000EC6AE /* PhoneType.swift */,
+				CBF19B841E4CD95F000EC6AE /* Contact.swift */,
+				CBF19B831E4CD135000EC6AE /* New Group */,
 			);
 			path = PhoneBook;
 			sourceTree = "<group>";
@@ -97,6 +99,18 @@
 				CBF19B7A1E4CD0D1000EC6AE /* Info.plist */,
 			);
 			path = PhoneBookTests;
+			sourceTree = "<group>";
+		};
+		CBF19B831E4CD135000EC6AE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CBF19B601E4CD0D1000EC6AE /* AppDelegate.swift */,
+				CBF19B6A1E4CD0D1000EC6AE /* Assets.xcassets */,
+				CBF19B6C1E4CD0D1000EC6AE /* LaunchScreen.storyboard */,
+				CBF19B6F1E4CD0D1000EC6AE /* Info.plist */,
+				CBF19B671E4CD0D1000EC6AE /* PhoneBook.xcdatamodeld */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF19B851E4CD95F000EC6AE /* Contact.swift in Sources */,
 				CBF19B631E4CD0D1000EC6AE /* ViewController.swift in Sources */,
 				CBF19B691E4CD0D1000EC6AE /* PhoneBook.xcdatamodeld in Sources */,
+				CBF19B881E4CDC25000EC6AE /* PhoneType.swift in Sources */,
 				CBF19B611E4CD0D1000EC6AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
